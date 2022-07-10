@@ -3,23 +3,25 @@ import heroPic from "../public/images/birds.png";
 
 export default function Hero() {
     return (
-        <div className="img-div">
-            <div className="herotext">
-                <h1>LANGKAWI WRITERS' FESTIVAL</h1>
-                <span>1 - 4 September 2022</span>
+        <>
+            <div className="img-div">
+                <div className="herotext">
+                    <h1>LANGKAWI WRITERS' FESTIVAL</h1>
+                    <span>1 - 4 September 2022</span>
+                </div>
+                <Image
+                    className="hero"
+                    src={heroPic}
+                    alt="Langkawi Writer's Festival"
+                    layout="fill"
+                    objectFit="cover"
+                    objectPosition="0 20%"
+                    priority
+                    style={{
+                        opacity: 0.7,
+                    }}
+                />
             </div>
-            <Image
-                className="hero"
-                src={heroPic}
-                alt="Langkawi Writer's Festival"
-                layout="fill"
-                objectFit="cover"
-                objectPosition="0 20%"
-                priority
-                style={{
-                    opacity: 0.7,
-                }}
-            />
             <style jsx>{`
                 .herotext {
                     position: relative;
@@ -47,7 +49,6 @@ export default function Hero() {
                     height: 70vh;
                 }
             `}</style>
-            ;
-        </div>
+        </>
     );
 }
