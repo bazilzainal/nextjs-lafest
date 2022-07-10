@@ -13,7 +13,7 @@ export default function Footer() {
                 .footer {
                     background-color: #424242;
                     padding: 20px;
-                    position: fixed;
+                    // position: fixed;
                     bottom: 0;
                     width: 100%;
                     left: 0;
