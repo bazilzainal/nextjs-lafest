@@ -1,4 +1,4 @@
-import TopNav from '../components/TopNav';
+import TopNav from '../components/topnav';
 
 // Add bootstrap
 import "bootstrap/dist/css/bootstrap.css";
