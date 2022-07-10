@@ -7,7 +7,7 @@ export default function FirstPost() {
     return (
         <Layout>
             <Head>
-                <title>First Post</title>
+                <title>About</title>
             </Head>
             <h1>First Post!</h1>
             <Accordion defaultActiveKey="0">
