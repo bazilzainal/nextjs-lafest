@@ -16,7 +16,7 @@ export default function Hero() {
                     layout="fill"
                     objectFit="cover"
                     objectPosition="0 20%"
-                    priority
+                    // priority
                     style={{
                         opacity: 0.7,
                     }}
