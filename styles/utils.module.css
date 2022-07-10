@@ -1,4 +1,4 @@
-.heading2Xl {
+/* .heading2Xl {
     font-size: 2.5rem;
     line-height: 1.2;
     font-weight: 800;
@@ -12,6 +12,7 @@
     font-weight: 800;
     letter-spacing: -0.05rem;
     margin: 1rem 0;
+    background-color: #525252;
   }
   
   .headingLg {
@@ -23,6 +24,7 @@
   .headingMd {
     font-size: 1.2rem;
     line-height: 1.5;
+    color: #525252;
   }
   
   .borderCircle {
@@ -50,4 +52,4 @@
   .lightText {
     color: #666;
   }
-  
+   */
