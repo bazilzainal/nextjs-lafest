@@ -13,7 +13,7 @@ export default function Layout({ children, home }) {
                 <meta name="description" content="Literature" />
                 <meta
                     property="og:image"
-                    content={ogshare}
+                    content="https://langkawiwritersfestival.com/images/ogshare.png"
                 />
                 {/* <meta
                     property="og:image"
