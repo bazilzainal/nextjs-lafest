@@ -12,6 +12,8 @@ export default function Home() {
             <Layout home>
                 <Head>
                     <title>{siteTitle}</title>
+                    <link href="http://fonts.cdnfonts.com/css/sifonn" rel="stylesheet" />
+                
                 </Head>
                 <Section>
                     <h1>Welcome to the First Langkawi Writers' Festival</h1>
