@@ -12,15 +12,15 @@ export default function Home() {
             <Layout home>
                 <Head>
                     <title>{siteTitle}</title>
-                
                 </Head>
                 <Section>
-                    <h1>Welcome to the First Langkawi Writers' Festival</h1>
-                    <p>We're super stoked to have you here.</p>
+                    <div className={utilStyles.intro}>
+                        <h1 className={utilStyles.introtext}>Welcome to the Inaugural Langkawi Writers' Festival</h1>
+                    </div>
                 </Section>
                 <Section>
-                    <h1>LOTS OF WRITING TO BE HAD</h1>
-                    <p>Writing awesome stuff – this way </p>
+                    <h1>we're still writing things up</h1>
+                    <h2>but good things are coming your way</h2>
                 </Section>
             </Layout>
         </>

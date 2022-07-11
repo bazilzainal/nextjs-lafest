@@ -2,7 +2,6 @@ import Head from "next/head";
 import { Container } from "react-bootstrap";
 import Footer from "./footer";
 
-
 export const siteTitle = "Langkawi Writers' Festival";
 
 export default function Layout({ children, home }) {
@@ -21,8 +20,15 @@ export default function Layout({ children, home }) {
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             </Head>
+
             {home && <main>{children}</main>}
-            {!home && (<Container>{children}</Container>)}
+            {!home && (
+                <Container>
+                    {/* Spacer element for sticky header */}
+                    <div style={{ height: `15vh` }}></div>
+                    {children}
+                </Container>
+            )}
             <Footer />
         </div>
     );
