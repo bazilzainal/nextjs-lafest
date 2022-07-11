@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { Container } from "react-bootstrap";
 import Footer from "./footer";
-import ogshare from "../public/images/og-share.png";
 
 export const siteTitle = "Langkawi Writers' Festival";
 
