@@ -1,4 +1,5 @@
 import { Container } from "react-bootstrap";
+import { siteTitle } from "./layout";
 
 export default function Footer() {
     var currentTime = new Date();
@@ -7,7 +8,7 @@ export default function Footer() {
     return (
         <div className="footer">
             <Container>
-                <p>Copyright © {year} Langkawi Writer's Festival</p>
+                <p>Copyright © {year} {siteTitle}</p>
             </Container>
             <style jsx>{`
                 .footer {

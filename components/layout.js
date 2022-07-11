@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import Footer from "./footer";
 
 
-export const siteTitle = "Langkawi Writer's Festival";
+export const siteTitle = "Langkawi Writers' Festival";
 
 export default function Layout({ children, home }) {
     return (

@@ -12,7 +12,7 @@ export default function Hero() {
                 <Image
                     className="hero"
                     src={heroPic}
-                    alt="Langkawi Writer's Festival"
+                    alt="Langkawi Writers' Festival"
                     layout="fill"
                     objectFit="cover"
                     objectPosition="0 20%"
@@ -29,6 +29,7 @@ export default function Hero() {
                     color: #fff;
                     top: 50%;
                     left: 10%;
+                    font-family: "Sifonn", sans-serif;
                 }
 
                 .herotext h1 {
@@ -47,6 +48,11 @@ export default function Hero() {
                     position: relative;
                     width: 100%;
                     height: 70vh;
+                    background-color: #767676;
+                    background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)),
+                        url("https://bit.ly/2rlzaXi");
+                    background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)),
+                        url("https://bit.ly/2rlzaXi"); /* The least supported option. */
                 }
             `}</style>
         </>
