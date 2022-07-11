@@ -1,4 +1,5 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+@import url('http://fonts.cdnfonts.com/css/sifonn');
 
 /* Remove links having underline */
 .me-auto a {
@@ -29,4 +30,8 @@ pre {
 html {
   background-color: #424242;
   overflow-x: hidden;
+}
+
+.herotext {
+  font-family: "Sifonn", sans-serif;
 }
