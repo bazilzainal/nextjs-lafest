@@ -49,10 +49,8 @@ export default function Hero() {
                     width: 100%;
                     height: 70vh;
                     background-color: #767676;
-                    background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)),
-                        url("https://bit.ly/2rlzaXi");
-                    background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)),
-                        url("https://bit.ly/2rlzaXi"); /* The least supported option. */
+                    background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8));
+                    background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)); /* The least supported option. */
                 }
             `}</style>
         </>
