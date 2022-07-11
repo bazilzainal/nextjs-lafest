@@ -24,7 +24,7 @@ export default function Hero() {
             </div>
             <style jsx>{`
                 .herotext {
-                    position: relative;
+                    position: absolute;
                     z-index: 1;
                     color: #fff;
                     top: 50%;

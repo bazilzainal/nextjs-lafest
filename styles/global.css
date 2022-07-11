@@ -29,7 +29,7 @@ pre {
 
 html {
   background-color: #424242;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .herotext {
