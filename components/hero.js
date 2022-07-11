@@ -1,5 +1,5 @@
 import Image from "next/image";
-import heroPic from "../public/images/birds.PNG";
+import heroPic from "../public/images/birds.png";
 
 export default function Hero() {
     return (
