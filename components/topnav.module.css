@@ -13,12 +13,12 @@
     transition: 0.3s;
 }
 
-.button:hover {
-    color: black;
-    text-decoration: underline;
+.toggler {
+    border: none;
 }
 
-.topnav{
+
+.topnav {
     position: fixed !important;
     width: 100% !important;
     height: auto !important;
@@ -26,4 +26,29 @@
     background-color: #ffffff;
 }
 
+.button {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
 
+.button:hover {
+    color: #000;
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.button:hover::before {
+    transform: scaleX(1);
+}
