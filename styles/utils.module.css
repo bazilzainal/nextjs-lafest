@@ -1,3 +1,18 @@
+.flexdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexdiv * {
+    margin-top: 10px;
+}
+
+.flexdiv .row {
+  justify-content: space-between;
+}
+
 .intro h1 {
     font-size: 3rem;
     font-weight: bold;
@@ -5,8 +20,9 @@
 }
 
 .intro {
-    padding: 20% 10% 5% 30%;
+    margin: 20% 10% 5% 20%;
 }
+
 /* .heading2Xl {
     font-size: 2.5rem;
     line-height: 1.2;

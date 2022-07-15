@@ -20,7 +20,7 @@ export default function TopNav() {
             <Navbar expanded={show} className={styles.topnav} expand="md" style={{ justifyContent: `space-around` }}>
                 <Container className="mx-auto">
                     <Link href="/" passHref>
-                        <Navbar.Brand>
+                        <Navbar.Brand className={styles.navbrand}>
                             <Image src={logo} width={70} height={70} onClick={handleClick}></Image>
                         </Navbar.Brand>
                     </Link>
@@ -33,9 +33,9 @@ export default function TopNav() {
                             <Link href="/" passHref >
                                 <Nav.Link onClick={handleClick}>Home</Nav.Link>
                             </Link>
-                            <Link href="/tickets" passHref>
+                            {/* <Link href="/tickets" passHref>
                                 <Nav.Link onClick={handleClick}>Tickets</Nav.Link>
-                            </Link>
+                            </Link> */}
                             <Link href="/about" passHref>
                                 <Nav.Link onClick={handleClick}>About</Nav.Link>
                             </Link>

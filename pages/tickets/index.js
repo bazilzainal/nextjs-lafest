@@ -1,9 +1,8 @@
-import Link from "next/link";
 import Head from "next/head";
-import Script from "next/script";
 import Layout from "../../components/layout";
 import Accordion from "react-bootstrap/Accordion"
-export default function FirstPost() {
+
+export default function Page() {
     return (
         <Layout>
             <Head>

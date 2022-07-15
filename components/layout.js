@@ -45,11 +45,11 @@ export default function Layout({ children, home }) {
 
             {home && <main>{children}</main>}
             {!home && (
-                <Container>
+                <main>
                     {/* Spacer element for sticky header */}
                     <div style={{ height: `15vh` }}></div>
                     {children}
-                </Container>
+                </main>
             )}
             <Footer />
         </div>

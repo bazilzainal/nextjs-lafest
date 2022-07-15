@@ -17,13 +17,16 @@
     border: none;
 }
 
-
 .topnav {
     position: fixed !important;
     width: 100% !important;
     height: auto !important;
     z-index: 100 !important;
     background-color: #ffffff;
+}
+
+.navbrand {
+    margin-right: 0 !important;
 }
 
 .button {

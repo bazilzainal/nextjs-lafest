@@ -1,37 +1,57 @@
-import Link from "next/link";
 import Head from "next/head";
-import Script from "next/script";
 import Layout from "../../components/layout";
-import Accordion from "react-bootstrap/Accordion"
-export default function FirstPost() {
+import Section from "../../components/section";
+import { siteTitle } from "../../components/layout";
+import { Container } from "react-bootstrap";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import utilStyles from "../../styles/utils.module.css";
+
+export default function Page() {
     return (
         <Layout>
             <Head>
-                <title>About</title>
+                <title>About | {siteTitle}</title>
             </Head>
-            <h1>First Post!</h1>
-            <Accordion defaultActiveKey="0">
-                <Accordion.Item eventKey="0">
-                    <Accordion.Header>Accordion Item #1</Accordion.Header>
-                    <Accordion.Body>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </Accordion.Body>
-                </Accordion.Item>
-                <Accordion.Item eventKey="1">
-                    <Accordion.Header>Accordion Item #2</Accordion.Header>
-                    <Accordion.Body>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </Accordion.Body>
-                </Accordion.Item>
-            </Accordion>
+
+            <Section size="Md">
+                <Container className={utilStyles.flexdiv}>
+                    <Row>
+                        <Col>
+                            <h1>About</h1>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col md={3} className={utilStyles.flexdiv}>
+                            <h1>Story</h1>
+                        </Col>
+                        <Col md={7}>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nam doloribus officia
+                                quibusdam est exercitationem cupiditate cumque at quo dignissimos deleniti distinctio
+                                libero non officiis nulla animi natus maxime aliquid, ipsa suscipit voluptatibus
+                                dolores, nisi esse. Aperiam officiis dolor repudiandae, minima perspiciatis repellat sit
+                                sequi, est harum rem quo vitae.
+                            </p>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col sm={4}>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nam doloribus officia
+                                quibusdam est exercitationem cupiditate cumque at quo dignissimos deleniti distinctio
+                                libero non officiis nulla animi natus maxime aliquid, ipsa suscipit voluptatibus
+                                dolores, nisi esse. Aperiam officiis dolor repudiandae, minima perspiciatis repellat sit
+                                sequi, est harum rem quo vitae.
+                            </p>
+                        </Col>
+                        <Col sm={6} className={utilStyles.flexdiv}>
+                            <h2><i>"We're writing our future"</i></h2>
+                        </Col>
+                    </Row>
+                </Container>
+            </Section>
+            <Section size="Sm"></Section>
         </Layout>
     );
 }
