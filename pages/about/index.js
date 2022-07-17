@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import Layout from "../../components/layout";
 import Section from "../../components/section";
 import { siteTitle } from "../../components/layout";
@@ -6,6 +7,7 @@ import { Container } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import utilStyles from "../../styles/utils.module.css";
+import profilePicture from "../../public/images/garden.jpg";
 
 export default function Page() {
     return (
@@ -16,11 +18,6 @@ export default function Page() {
 
             <Section size="Md">
                 <Container className={utilStyles.flexdiv}>
-                    <Row>
-                        <Col>
-                            <h1>About</h1>
-                        </Col>
-                    </Row>
                     <Row>
                         <Col md={3} className={utilStyles.flexdiv}>
                             <h1>Story</h1>
@@ -47,6 +44,16 @@ export default function Page() {
                         </Col>
                         <Col sm={6} className={utilStyles.flexdiv}>
                             <h2><i>"We're writing our future"</i></h2>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col lg="true">
+                            <Image 
+                            src={profilePicture}
+                            width={150}
+                            height={150}
+                            className={utilStyles.profilePicture}
+                            />
                         </Col>
                     </Row>
                 </Container>

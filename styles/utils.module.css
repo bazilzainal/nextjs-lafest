@@ -13,7 +13,7 @@
   justify-content: space-between;
 }
 
-.intro h1 {
+.introtext {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 0;
@@ -23,6 +23,10 @@
     margin: 20% 10% 5% 20%;
 }
 
+.profilePicture {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
 /* .heading2Xl {
     font-size: 2.5rem;
     line-height: 1.2;

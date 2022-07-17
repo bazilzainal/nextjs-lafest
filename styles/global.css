@@ -37,3 +37,7 @@ html {
 .herotext {
   font-family: "Sifonn", sans-serif;
 }
+
+.row {
+  justify-content: space-around;
+}
