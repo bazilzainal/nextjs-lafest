@@ -24,9 +24,9 @@ export default function TopNav() {
                             <Image src={logo} width={70} height={70} onClick={handleClick}></Image>
                         </Navbar.Brand>
                     </Link>
-                    <Link href="/">
+                    {/* <Link href="/">
                         <a className={styles.button} onClick={handleClick}>Buy Tickets</a>
-                    </Link>
+                    </Link> */}
                     <Navbar.Toggle className={styles.toggler} onClick={() => setShow(show ? false : "expanded")} />
                     <Navbar.Collapse>
                         <Nav className={styles.navsection}>
