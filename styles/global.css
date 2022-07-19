@@ -1,16 +1,10 @@
 @import url('https://fonts.cdnfonts.com/css/sifonn');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
-@import "~bootstrap/dist/css/bootstrap.min.css";
 
 /* Remove links having underline */
 .me-auto a {
     text-decoration: none;
 }
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
 /* Reset some para styles causing weird margin errors */
 h1,

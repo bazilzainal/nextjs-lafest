@@ -1,10 +1,10 @@
 import TopNav from '../components/topnav';
 
 // Add bootstrap
-import "bootstrap/dist/css/bootstrap.css";
+// import "bootstrap/dist/css/bootstrap.css";
 
 // Custom CSS
-import "../styles/global.css";
+import "../scss/custom.scss";
 
 export default function App({ Component, pageProps }) {
     return (

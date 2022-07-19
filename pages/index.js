@@ -5,6 +5,7 @@ import utilStyles from "../styles/utils.module.css";
 import Hero from "../components/hero";
 import Section from "../components/section";
 import profilePicture from "../public/images/garden.jpg";
+import Button from "react-bootstrap/Button";
 
 export default function Home() {
     return (
@@ -20,14 +21,14 @@ export default function Home() {
                     </div>
                 </Section>
                 <Section size="Sm">
+                    <h3 className={utilStyles.subheader}>Readers, here’s your ticket </h3>
                     <p>
-                        Langkawi Writers' Festival brings together the best writers from Malaysia and the world to
-                        create a unique experience for readers and writers alike. Share conversations, write stories,
-                        and explore your ideas with the world.
+                        To love reading is to love anticipating the next stop of your journey into a new world. Travel
+                        with us to the inaugural Langkawi Writers’ Festival. Between 1 to 4 September 2022, the island
+                        will be lit by the curious minds of local and international writers, poets, scientists, and
+                        public intellectuals. Share the universal human experience of storytelling with like-minded book
+                        lovers.
                     </p>
-                </Section>
-                <Section size="Sm">
-                    <h4>More to come soon, check back later!</h4>
                 </Section>
 
                 <Section size="Sm">

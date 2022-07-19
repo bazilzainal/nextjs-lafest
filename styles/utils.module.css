@@ -27,6 +27,11 @@
     border-radius: 50%;
     margin-bottom: 10px;
 }
+
+.subheader {
+  align-self: flex-start;
+}
+
 /* .heading2Xl {
     font-size: 2.5rem;
     line-height: 1.2;

@@ -29,7 +29,7 @@ export default function Section({ children, size }) {
 
     return (
         <div className={className}>
-            <Container className={utilStyles.flexdiv}>
+            <Container fluid="md" className={utilStyles.flexdiv}>
                 <>{children}</>
             </Container>
         </div>
