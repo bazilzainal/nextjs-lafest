@@ -30,9 +30,13 @@ export default function Home() {
                         lovers.
                     </p>
                 </Section>
-
                 <Section size="Sm">
-                    <Image width={250} height={250} src={profilePicture} className={utilStyles.profilePicture} />
+                    <Button href="/register" variant="primary">
+                        Register
+                    </Button>
+                    {/* <a href="/register" className={utilStyles.button}>
+                        Register
+                    </a> */}
                 </Section>
             </Layout>
         </>
