@@ -39,9 +39,9 @@ export default function TopNav() {
                             <Link href="/about" passHref>
                                 <Nav.Link onClick={handleClick}>About</Nav.Link>
                             </Link>
-                            {/* <Link href="/contact" passHref>
-                                <Nav.Link onClick={handleClick}>Contact</Nav.Link>
-                            </Link> */}
+                            <Link href="/register" passHref>
+                                <Nav.Link onClick={handleClick}>Register</Nav.Link>
+                            </Link>
                             {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
