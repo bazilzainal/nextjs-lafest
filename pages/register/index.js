@@ -13,8 +13,8 @@ export default function Page() {
             <Head>
                 <title>Register | {siteTitle}</title>
             </Head>
-            <Script src="https://www.eventbrite.sg/static/widgets/eb_widgets.js" strategy="beforeInteractive"/>
-            <Script id="eventbrite">
+            <Script id="eventbriteThirdParty" src="https://www.eventbrite.sg/static/widgets/eb_widgets.js" strategy="beforeInteractive"/>
+            <Script id="eventbriteInline">
                 {` console.log("scriptooooo");
                 var exampleCallback = function() {
                     console.log('Order complete!');
