@@ -31,12 +31,11 @@ export default function Page() {
                     onOrderComplete: exampleCallback  // Method called when an order has successfully completed
                 });`}
             </Script>
-            <Section size="Md">
-                <Container className={utilStyles.flexdiv}>
-                    <div id="eventbrite-widget-container-381687205707">test</div>
+            <Section size="Lg">
+                <Container>
+                    <div id="eventbrite-widget-container-381687205707"></div>
                 </Container>
             </Section>
-            <Section size="Sm"></Section>
         </Layout>
     );
 }
