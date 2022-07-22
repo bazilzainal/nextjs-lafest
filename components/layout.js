@@ -1,12 +1,14 @@
 import Head from "next/head";
 import { Container } from "react-bootstrap";
 import Footer from "./footer";
+import layoutStyles from "./layout.module.css";
+import particleStyles from "./layout.module.scss";
 
 export const siteTitle = "Langkawi Writers' Festival";
 
 export default function Layout({ children, home }) {
     return (
-        <div>
+        <div className={layoutStyles.container}>
             <Head>
                 <link rel="icon" href="/favicon.ico" />
                 {/* <meta
@@ -42,7 +44,40 @@ export default function Layout({ children, home }) {
                 />
                 <meta name="twitter:image" content="https://langkawiwritersfestival.com/images/ogshare.png" />
             </Head>
-
+            {/* Temporarily disable particles 
+            
+            <div id="particle-container">
+                <div className={particleStyles.particle}></div>
+                <div className={particleStyles.particle}></div>
+                <div className={particleStyles.particle}></div>
+                <div className={particleStyles.particle}></div>
+                <div className={particleStyles.particle}></div>
+                <div className={particleStyles.particle}></div>
+                <div className={particleStyles.particle}></div>
+                <div className={particleStyles.particle}></div>
+                <div className={particleStyles.particle}></div>
+                <div className={particleStyles.particle}></div>
+                <div className={particleStyles.particle}></div>
+                <div className={particleStyles.particle}></div>
+                <div className={particleStyles.particle}></div>
+                <div className={particleStyles.particle}></div>
+                <div className={particleStyles.particle}></div>
+                <div className={particleStyles.particle}></div>
+                <div className={particleStyles.particle}></div>
+                <div className={particleStyles.particle}></div>
+                <div className={particleStyles.particle}></div>
+                <div className={particleStyles.particle}></div>
+                <div className={particleStyles.particle}></div>
+                <div className={particleStyles.particle}></div>
+                <div className={particleStyles.particle}></div>
+                <div className={particleStyles.particle}></div>
+                <div className={particleStyles.particle}></div>
+                <div className={particleStyles.particle}></div>
+                <div className={particleStyles.particle}></div>
+                <div className={particleStyles.particle}></div>
+                <div className={particleStyles.particle}></div>
+                <div className={particleStyles.particle}></div>
+            </div> */}
             {home && <main>{children}</main>}
             {!home && (
                 <main>
@@ -51,6 +86,7 @@ export default function Layout({ children, home }) {
                     {children}
                 </main>
             )}
+
             <Footer />
         </div>
     );

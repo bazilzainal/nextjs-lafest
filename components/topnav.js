@@ -42,6 +42,9 @@ export default function TopNav() {
                             {/* <Link href="/contact" passHref>
                                 <Nav.Link onClick={handleClick}>Contact</Nav.Link>
                             </Link> */}
+                            <Link href="/programme" passHref>
+                                <Nav.Link onClick={handleClick}>Programme</Nav.Link>
+                            </Link>
                             {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
