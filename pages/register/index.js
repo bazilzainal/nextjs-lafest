@@ -32,6 +32,8 @@ export default function Page() {
                 });`}
             </Script>
             <Section size="Lg">
+
+                <h1>Register</h1>
                 <Container>
                     <div id="eventbrite-widget-container-381687205707"></div>
                 </Container>

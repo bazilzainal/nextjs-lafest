@@ -5,7 +5,7 @@ import utilStyles from "../styles/utils.module.css";
 import Hero from "../components/hero";
 import Section from "../components/section";
 import profilePicture from "../public/images/garden.jpg";
-import Button from "react-bootstrap/Button";
+import Link from "next/link";
 
 export default function Home() {
     return (
@@ -29,10 +29,10 @@ export default function Home() {
                         public intellectuals. Share the universal human experience of storytelling with like-minded book
                         lovers.
                     </p>
-                </Section>
 
-                <Section size="Sm">
-                    <Image width={250} height={250} src={profilePicture} className={utilStyles.profilePicture} />
+                    <a href="/register" className={utilStyles.button}>
+                        Register
+                    </a>
                 </Section>
             </Layout>
         </>
