@@ -14,8 +14,9 @@ export default function Page() {
                 <title>Register | {siteTitle}</title>
             </Head>
             <Script src="https://www.eventbrite.sg/static/widgets/eb_widgets.js" strategy="beforeInteractive"/>
-            <Script id="eventbrite" strategy="beforeInteractive">
-                {`var exampleCallback = function() {
+            <Script id="eventbrite">
+                {` console.log("scriptooooo");
+                var exampleCallback = function() {
                     console.log('Order complete!');
                 };
 
@@ -32,7 +33,7 @@ export default function Page() {
             </Script>
             <Section size="Md">
                 <Container className={utilStyles.flexdiv}>
-                    <div id="eventbrite-widget-container-381687205707"></div>
+                    <div id="eventbrite-widget-container-381687205707">test</div>
                 </Container>
             </Section>
             <Section size="Sm"></Section>
