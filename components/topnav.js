@@ -5,10 +5,9 @@ import Nav from "react-bootstrap/Nav";
 import Image from "next/image";
 import logo from "../public/images/logo.png";
 import styles from "./topnav.module.css";
-import { useState } from 'react';
+import { useState } from "react";
 
 export default function TopNav() {
-
     const [show, setShow] = useState(false);
 
     function handleClick() {
@@ -17,7 +16,9 @@ export default function TopNav() {
 
     return (
         <>
-            <Navbar expanded={show} className={styles.topnav} expand="md" style={{ justifyContent: `space-around` }}>
+            {/* Make navbar not collapse, too few buttons for now */}
+            {/* <Navbar expanded={show} className={styles.topnav} expand="md" style={{ justifyContent: `space-around` }}> */}
+            <Navbar expanded={show} className={styles.topnav} style={{ justifyContent: `space-around` }}>
                 <Container className="mx-auto">
                     <Link href="/" passHref>
                         <Navbar.Brand className={styles.navbrand}>
@@ -28,9 +29,9 @@ export default function TopNav() {
                         <a className={styles.button} onClick={handleClick}>Buy Tickets</a>
                     </Link> */}
                     <Navbar.Toggle className={styles.toggler} onClick={() => setShow(show ? false : "expanded")} />
-                    <Navbar.Collapse>
+                    <Navbar.Collapse className="justify-content-end">
                         <Nav className={styles.navsection}>
-                            <Link href="/" passHref >
+                            <Link href="/" passHref>
                                 <Nav.Link onClick={handleClick}>Home</Nav.Link>
                             </Link>
                             {/* <Link href="/tickets" passHref>
@@ -45,6 +46,9 @@ export default function TopNav() {
                             <Link href="/programme" passHref>
                                 <Nav.Link onClick={handleClick}>Programme</Nav.Link>
                             </Link>
+                            <Nav.Link href="/register" onClick={handleClick}>
+                                Register
+                            </Nav.Link>
                             {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>

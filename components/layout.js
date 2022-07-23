@@ -22,7 +22,7 @@ export default function Layout({ children, home }) {
                 <title>Langkawi Writers' Festival</title>
                 <meta
                     name="description"
-                    content="Head on over to Langkawi's Inaugural Writers' Festival, happening September 1 - 4 2022."
+                    content="Langkawi is proud to announce its very first Writers’ Festival. Between 1 to 4 September 2022, the festival will welcome inquisitive, stirring, and boundary-pushing conversations helmed by the brightest of contemporary thinkers and writers. "
                 />
 
                 <meta property="og:url" content="https://langkawiwritersfestival.com/" />
@@ -30,9 +30,9 @@ export default function Layout({ children, home }) {
                 <meta property="og:title" content="Langkawi Writers' Festival" />
                 <meta
                     property="og:description"
-                    content="Head on over to Langkawi's Inaugural Writers' Festival, happening September 1 - 4 2022."
+                    content="Langkawi is proud to announce its very first Writers’ Festival. Between 1 to 4 September 2022, the festival will welcome inquisitive, stirring, and boundary-pushing conversations helmed by the brightest of contemporary thinkers and writers. "
                 />
-                <meta property="og:image" content="https://langkawiwritersfestival.com/images/ogshare1.png" />
+                <meta property="og:image" content="https://langkawiwritersfestival.com/images/ogshare.png" />
 
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta property="twitter:domain" content="langkawiwritersfestival.com" />
@@ -40,7 +40,7 @@ export default function Layout({ children, home }) {
                 <meta name="twitter:title" content="Langkawi Writers' Festival" />
                 <meta
                     name="twitter:description"
-                    content="Head on over to Langkawi's Inaugural Writers' Festival, happening September 1 - 4 2022."
+                    content="Langkawi is proud to announce its very first Writers’ Festival. Between 1 to 4 September 2022, the festival will welcome inquisitive, stirring, and boundary-pushing conversations helmed by the brightest of contemporary thinkers and writers. "
                 />
                 <meta name="twitter:image" content="https://langkawiwritersfestival.com/images/ogshare.png" />
             </Head>
