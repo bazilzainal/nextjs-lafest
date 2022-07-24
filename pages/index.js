@@ -10,6 +10,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import MAG from "../public/images/logo/MAG.png"
 import balaiseni from "../public/images/logo/balaiseninegara.jpg"
 import LADA from "../public/images/logo/LADA.svg"
+import Button from "react-bootstrap/Button"
 
 export default function Home({ allEventsData }) {
     return (
@@ -35,15 +36,19 @@ export default function Home({ allEventsData }) {
                     </p>
                 </Section>
                 <Section size="Sm">
-                    <a href="/register" className={utilStyles.buttonFold}>
+                    {/* <a href="/register" className={utilStyles.buttonFold}>
                         <span className={utilStyles.textContainer}>
                             <span className={utilStyles.text}>Register</span>
                         </span>
-                    </a>
+                    </a> */}
 
                     {/* <a href="/register" className={utilStyles.button}>
                         Register
                     </a> */}
+
+                    <Button href="/register">
+                        Register
+                    </Button>
                     <a id="programme"></a>
                 </Section>
                 <Section size="Md">
