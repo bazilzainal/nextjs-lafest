@@ -1,0 +1,74 @@
+$border: 1px solid #4d4d4d;
+$header-font: "Poppins", sans-serif;
+$header-color: #ed666f;
+$subheader-color: #757474;
+
+.all img {
+    width: 100%;
+    border-radius: 5px;
+    @media screen and (max-width: 599px) {
+        height: 250px;
+        object-fit: cover;
+    }
+}
+.all body {
+    background: #2b2a2b;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+// .all main {
+//     padding: 2rem;
+//     max-width: 1400px;
+//     margin: auto;
+// }
+
+.all h1 {
+    font-family: $header-font;
+}
+.all h2 {
+    color: $header-color;
+    font-family: $header-font;
+    font-weight: 500;
+    padding-top: 2rem;
+}
+
+.all h3 {
+    font-family: $header-font;
+    font-weight: 500;
+    margin: 0.5rem 0;
+}
+
+.all h4 {
+    color: $subheader-color;
+}
+
+.gridWrapper {
+    // Adding grid layout for screen size above 600
+    @media screen and (min-width: 600px) {
+        display: grid;
+        grid-gap: 1rem;
+    }
+
+    @media screen and (min-width: 1025px) {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+    @media screen and (min-width: 600px) and (max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+.all article {
+    p {
+        font-family: "Karla", sans-serif;
+        font-size: 0.95rem;
+        // color: #c8c8c8;
+        color: #424242;
+    }
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border-bottom: $border;
+}

@@ -40,6 +40,12 @@ export default function TopNav() {
                             <Link href="/about" passHref>
                                 <Nav.Link onClick={handleClick}>About</Nav.Link>
                             </Link>
+                            {/* <Link href="/contact" passHref>
+                                <Nav.Link onClick={handleClick}>Contact</Nav.Link>
+                            </Link> */}
+                            <Link href="/#programme" passHref>
+                                <Nav.Link onClick={handleClick}>Programme</Nav.Link>
+                            </Link>
                             <Nav.Link href="/register" onClick={handleClick}>
                                 Register
                             </Nav.Link>

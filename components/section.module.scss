@@ -1,17 +1,19 @@
+$section-color: #ffffff;
+
 .sectionLg {
-    background-color: #f5f5f5;
+    background-color: $section-color;
     padding: 20px;
     min-height: 80vh;
 }
 
 .sectionMd {
-    background-color: #f5f5f5;
+    background-color: $section-color;
     padding: 20px;
     min-height: 50vh;
 }
 
 .sectionSm {
-    background-color: #f5f5f5;
+    background-color: $section-color;
     padding: 20px;
     min-height: 30vh;
 }
