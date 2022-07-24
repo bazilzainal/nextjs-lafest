@@ -34,6 +34,9 @@ export default function Page() {
             <Section size="Lg">
 
                 <h1>Register</h1>
+                <p>
+                    Langkawi Writers' Festival is a concession-free event, but registering ensures that you will be able to attend. Get a ticket for each attendee and head on over to the <strong>boldest</strong> festival in Langkawi.
+                    </p>
                 <Container>
                     <div id="eventbrite-widget-container-381687205707"></div>
                 </Container>
