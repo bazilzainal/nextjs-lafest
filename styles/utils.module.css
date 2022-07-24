@@ -139,7 +139,7 @@
 .buttonFold .text {
   display: block;
   font-weight: 900;
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
   position: relative;
 }
 .buttonFold:hover .text {

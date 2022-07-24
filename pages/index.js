@@ -1,12 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import Hero from "../components/hero";
 import Section from "../components/section";
-import profilePicture from "../public/images/garden.jpg";
 import { getSortedEventsData } from "../lib/events";
-import Button from "react-bootstrap/Button";
 import Timeline from "../components/timeline";
 
 export default function Home({ allEventsData }) {
