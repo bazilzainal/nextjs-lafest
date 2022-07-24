@@ -1,10 +1,15 @@
 import Head from "next/head";
+import Image from "next/image";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import Hero from "../components/hero";
 import Section from "../components/section";
 import { getSortedEventsData } from "../lib/events";
 import Timeline from "../components/timeline";
+import { Container, Row, Col } from "react-bootstrap";
+import MAG from "../public/images/logo/MAG.png"
+import balaiseni from "../public/images/logo/balaiseninegara.jpg"
+import LADA from "../public/images/logo/LADA.svg"
 
 export default function Home({ allEventsData }) {
     return (
@@ -43,6 +48,17 @@ export default function Home({ allEventsData }) {
                 </Section>
                 <Section size="Md">
                     <Timeline allEventsData={allEventsData}></Timeline>
+                </Section>
+                <Section size="Sm" className={utilStyles.organizers} middle>
+                    <p>Event proudly organized by</p>
+                    <Container className={utilStyles.sponsors}>
+                        <Row className={utilStyles.row}>
+                            <Col sm={3} className={utilStyles.sponsorPhotos}><Image src={MAG}></Image></Col>
+                            <Col sm={3} className={utilStyles.sponsorPhotos}><Image src={balaiseni}></Image></Col>
+                            <Col sm={3} className={utilStyles.sponsorPhotos}><Image src={LADA}></Image></Col>
+                            {/* <Col sm={3} className={utilStyles.sponsorPhotos}><Image src={LADA}></Image></Col> */}
+                        </Row>
+                    </Container>
                 </Section>
             </Layout>
         </>

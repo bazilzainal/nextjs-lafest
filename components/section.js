@@ -3,32 +3,32 @@ import { Container } from "react-bootstrap";
 import utilStyles from "../styles/utils.module.css";
 
 
-export default function Section({ children, size }) {
-    let className = styles.section;
+export default function Section({ children, size, middle }) {
+    let sizeClass = styles.section;
 
     switch (size) {
         case "Lg":
-            className = styles.sectionLg;
+            sizeClass = styles.sectionLg;
             break;
         case "Sm":
-            className = styles.sectionSm;
+            sizeClass = styles.sectionSm;
             break;
         case "Md":
-            className = styles.sectionMd;
+            sizeClass = styles.sectionMd;
             break;
         case "Xl":
-            className = styles.sectionXl;
+            sizeClass = styles.sectionXl;
             break;
         case "Xs":
-            className = styles.sectionXs;
+            sizeClass = styles.sectionXs;
             break;
         default:
-            className = styles.sectionLg;
+            sizeClass = styles.sectionLg;
             break;
     }
 
     return (
-        <div className={className}>
+        <div className={`${sizeClass} ${middle && styles.middle}`}>
             <Container fluid="md" className={utilStyles.flexdiv}>
                 <>{children}</>
             </Container>
