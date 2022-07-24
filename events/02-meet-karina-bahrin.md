@@ -1,11 +1,12 @@
 ---
-title: Meet the Author – Karina Bahrin
+title: Karina Bahrin – Meet the Author
 date: "2022-09-01"
-startTime: "11:00"
-endTime: "12:30"
+startTime: "11:00 AM"
+endTime: "12:30 PM"
 
+order: 2
 published: true
-description: Karina Bahrin is a writer and former columnist. She is the author of the book "The Accidental Malay"
+description: Karina Bahrin is a writer and former columnist. She is the author of the book "The Accidental Malay".
 hero: '/images/events/meet-karina-bahrin/hero.jpg'
 profile: '/images/events/meet-karina-bahrin/profile.jpg'
 ---

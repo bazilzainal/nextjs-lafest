@@ -1,4 +1,4 @@
-import styles from "./section.module.css";
+import styles from "./section.module.scss";
 import { Container } from "react-bootstrap";
 import utilStyles from "../styles/utils.module.css";
 

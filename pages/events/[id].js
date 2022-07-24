@@ -3,17 +3,15 @@ import { getAllEventIds, getEventData } from "../../lib/events";
 import Section from "../../components/section";
 import Image from "next/image";
 import styles from "./utils.module.css";
+import Date from "../../components/date";
 
 export default function Event({ eventData }) {
     return (
         <Layout>
-            <Section size="Md">
-                    <Image src={eventData.hero} width="100%" height="100%" objectFit="contain"></Image>
-            </Section>
             <Section>
-                {eventData.title}
-                <br />
-                {eventData.date}
+                <Image src={eventData.hero} width="100%" height="100%" objectFit="contain"></Image>
+                <h1>{eventData.title}</h1>
+                <Date dateString={eventData.date} />
                 <br />
                 <div dangerouslySetInnerHTML={{ __html: eventData.contentHtml }}></div>
             </Section>

@@ -5,9 +5,11 @@ import utilStyles from "../styles/utils.module.css";
 import Hero from "../components/hero";
 import Section from "../components/section";
 import profilePicture from "../public/images/garden.jpg";
+import { getSortedEventsData } from "../lib/events";
 import Button from "react-bootstrap/Button";
+import Timeline from "../components/timeline";
 
-export default function Home() {
+export default function Home({ allEventsData }) {
     return (
         <>
             <Hero />
@@ -31,14 +33,30 @@ export default function Home() {
                     </p>
                 </Section>
                 <Section size="Sm">
-                    <Button href="/register" variant="primary">
-                        Register
-                    </Button>
+                    <a href="/register" className={utilStyles.buttonFold}>
+                        <span className={utilStyles.textContainer}>
+                            <span className={utilStyles.text}>Register</span>
+                        </span>
+                    </a>
+
                     {/* <a href="/register" className={utilStyles.button}>
                         Register
                     </a> */}
+                    <a id="programme"></a>
+                </Section>
+                <Section size="Md">
+                    <Timeline allEventsData={allEventsData}></Timeline>
                 </Section>
             </Layout>
         </>
     );
+}
+
+export async function getStaticProps() {
+    const allEventsData = getSortedEventsData();
+    return {
+        props: {
+            allEventsData,
+        },
+    };
 }

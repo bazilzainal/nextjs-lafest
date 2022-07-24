@@ -1,10 +1,11 @@
 import Head from "next/head";
-import { siteTitle } from "../../components/layout";
+import Link from "next/link";
 import Layout from "../../components/layout";
 import Section from "../../components/section";
 import Timeline from "../../components/timeline";
+import Date from '../../components/date';
+import { siteTitle } from "../../components/layout";
 import { getSortedEventsData } from "../../lib/events";
-import Link from "next/link";
 
 export default function Page({ allEventsData }) {
     return (
@@ -13,20 +14,8 @@ export default function Page({ allEventsData }) {
                 <title>Programme | {siteTitle}</title>
             </Head>
 
-            {allEventsData.map((event) => (
-            
-                <Section key={event.id} size="Sm">
-                    <h2>{event.title}</h2>
-                    <p>{event.description}</p>
-                    <p>{event.date}</p>
-                    <Link href={`/events/${event.id}`}>
-                        <a>{event.title}</a>
-                    </Link>
-                </Section>
-            ))}
-
             <Section size="Md">
-                <Timeline></Timeline>
+                <Timeline allEventsData={ allEventsData }></Timeline>
             </Section>
         </Layout>
     );

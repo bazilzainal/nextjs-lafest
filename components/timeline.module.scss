@@ -1,9 +1,7 @@
-.all, .all * {
-    box-sizing: border-box;
-}
-
 $border: 1px solid #4d4d4d;
 $header-font: "Poppins", sans-serif;
+$header-color: #ed666f;
+$subheader-color: #757474;
 
 .all img {
     width: 100%;
@@ -30,9 +28,10 @@ $header-font: "Poppins", sans-serif;
     font-family: $header-font;
 }
 .all h2 {
-    color: #ed666f;
+    color: $header-color;
     font-family: $header-font;
     font-weight: 500;
+    padding-top: 2rem;
 }
 
 .all h3 {
@@ -41,19 +40,24 @@ $header-font: "Poppins", sans-serif;
     margin: 0.5rem 0;
 }
 
+.all h4 {
+    color: $subheader-color;
+}
+
 .gridWrapper {
     // Adding grid layout for screen size above 600
     @media screen and (min-width: 600px) {
         display: grid;
-        grid-auto-flow: column;
         grid-gap: 1rem;
     }
 
     @media screen and (min-width: 1025px) {
-        grid-template-columns: 1fr 2fr 1fr 2fr;
+        grid-template-columns: repeat(3, 1fr);
+
     }
     @media screen and (min-width: 600px) and (max-width: 1024px) {
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: repeat(2, 1fr);
+
     }
 }
 
@@ -61,56 +65,10 @@ $header-font: "Poppins", sans-serif;
     p {
         font-family: "Karla", sans-serif;
         font-size: 0.95rem;
-        color: #c8c8c8;
+        // color: #c8c8c8;
+        color: #424242;
     }
     padding-bottom: 1rem;
+    padding-top: 1rem;
     border-bottom: $border;
-
-    // using Grid area to place the 4th and 8th element.
-
-    &:nth-child(4) {
-        grid-area: 1/2/4/3;
-    }
-
-    &:nth-child(8) {
-        @media screen and (min-width: 1025px) {
-            grid-area: 1/4/4/-1;
-        }
-        @media screen and (min-width: 600px) and (max-width: 1024px) {
-            grid-area: 4/2/8/3;
-        }
-    }
-
-    &:nth-child(4n + 3) {
-        @media screen and (min-width: 1025px) {
-            border-bottom: 0;
-        }
-    }
-    &:nth-child(4) {
-        @media screen and (min-width: 1025px) {
-            border-right: $border;
-            padding-right: 1rem;
-        }
-    }
-    &:nth-child(4n) {
-        @media screen and (min-width: 600px) {
-            border-left: $border;
-            border-bottom: 0;
-            padding-left: 1rem;
-        }
-    }
-}
-
-.footer-note {
-    text-align: center;
-    font-family: "Karla", sans-serif;
-    font-size: 0.9rem;
-    background: white;
-    padding: 1rem;
-    color: black;
-    border-radius: 5px;
-    a {
-        color: inherit;
-        font-weight: 600;
-    }
 }

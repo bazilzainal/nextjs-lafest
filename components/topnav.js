@@ -43,7 +43,7 @@ export default function TopNav() {
                             {/* <Link href="/contact" passHref>
                                 <Nav.Link onClick={handleClick}>Contact</Nav.Link>
                             </Link> */}
-                            <Link href="/programme" passHref>
+                            <Link href="/#programme" passHref>
                                 <Nav.Link onClick={handleClick}>Programme</Nav.Link>
                             </Link>
                             <Nav.Link href="/register" onClick={handleClick}>
