@@ -7,10 +7,10 @@ import Section from "../components/section";
 import { getSortedEventsData } from "../lib/events";
 import Timeline from "../components/timeline";
 import { Container, Row, Col } from "react-bootstrap";
-import MAG from "../public/images/logo/MAG.png"
-import balaiseni from "../public/images/logo/balaiseninegara.jpg"
-import LADA from "../public/images/logo/LADA.svg"
-import Button from "react-bootstrap/Button"
+import MAG from "../public/images/logo/MAG.png";
+import balaiseni from "../public/images/logo/balaiseninegara.jpg";
+import LADA from "../public/images/logo/LADA.svg";
+import Button from "react-bootstrap/Button";
 
 export default function Home({ allEventsData }) {
     return (
@@ -35,7 +35,7 @@ export default function Home({ allEventsData }) {
                         lovers.
                     </p>
                 </Section>
-                <Section size="Sm">
+                <Section size="Xs">
                     {/* <a href="/register" className={utilStyles.buttonFold}>
                         <span className={utilStyles.textContainer}>
                             <span className={utilStyles.text}>Register</span>
@@ -46,21 +46,34 @@ export default function Home({ allEventsData }) {
                         Register
                     </a> */}
 
-                    <Button href="/register">
-                        Register
-                    </Button>
+                    <Button href="/register">Register</Button>
                     <a id="programme"></a>
                 </Section>
                 <Section size="Md">
                     <Timeline allEventsData={allEventsData}></Timeline>
                 </Section>
                 <Section size="Sm" className={utilStyles.organizers} middle>
-                    <p>Event proudly organized by</p>
                     <Container className={utilStyles.sponsors}>
                         <Row className={utilStyles.row}>
-                            <Col sm={3} className={utilStyles.sponsorPhotos}><Image src={MAG}></Image></Col>
-                            <Col sm={3} className={utilStyles.sponsorPhotos}><Image src={balaiseni}></Image></Col>
-                            <Col sm={3} className={utilStyles.sponsorPhotos}><Image src={LADA}></Image></Col>
+                            <p>Event proudly organized by</p>
+                        </Row>
+                        <Row className={utilStyles.row}>
+                            <Col sm={12} className={utilStyles.sponsorPhotos}>
+                                <Image src={MAG}></Image>
+                            </Col>
+                        </Row>
+                    </Container>
+                    <Container className={utilStyles.sponsors}>
+                        <Row className={utilStyles.row}>
+                            <p>Supported by</p>
+                        </Row>
+                        <Row className={utilStyles.row}>
+                            <Col sm={6} className={utilStyles.sponsorPhotos}>
+                                <Image src={balaiseni}></Image>
+                            </Col>
+                            <Col sm={6} className={utilStyles.sponsorPhotos}>
+                                <Image src={LADA}></Image>
+                            </Col>
                             {/* <Col sm={3} className={utilStyles.sponsorPhotos}><Image src={LADA}></Image></Col> */}
                         </Row>
                     </Container>

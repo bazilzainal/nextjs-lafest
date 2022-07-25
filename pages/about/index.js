@@ -18,7 +18,7 @@ export default function Page() {
 
             <Section size="Md">
                 <Container className={utilStyles.flexdiv}>
-                    <Row>
+                    <Row className={utilStyles.row}>
                         <Col md={3} className={utilStyles.flexdiv}>
                             <h1>About</h1>
                         </Col>
@@ -35,7 +35,7 @@ export default function Page() {
                             </p>
                         </Col>
                     </Row>
-                    <Row>
+                    <Row className={utilStyles.row}>
                         <Col sm={4}>
                             <p>
                                 Langkawi’s slow island life also offers an intimate local backdrop for knowledge seekers
@@ -53,7 +53,7 @@ export default function Page() {
                     </Row>
                 </Container>
             </Section>
-            <Section size="Sm"></Section>
+            <Section size="Xs"></Section>
         </Layout>
     );
 }

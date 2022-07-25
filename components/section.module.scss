@@ -17,6 +17,11 @@ $section-color: #ffffff;
     padding: 20px;
     min-height: 30vh;
 }
+.sectionXs {
+    background-color: $section-color;
+    padding: 20px;
+    min-height: 10vh;
+}
 
 .middle {
     display: flex;
