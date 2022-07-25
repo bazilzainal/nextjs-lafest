@@ -35,6 +35,7 @@ export default function Home({ allEventsData }) {
                         lovers.
                     </p>
                 </Section>
+                <a id="programme"></a>
                 <Section size="Xs">
                     {/* <a href="/register" className={utilStyles.buttonFold}>
                         <span className={utilStyles.textContainer}>
@@ -47,7 +48,6 @@ export default function Home({ allEventsData }) {
                     </a> */}
 
                     <Button href="/register">Register</Button>
-                    <a id="programme"></a>
                 </Section>
                 <Section size="Md">
                     <Timeline allEventsData={allEventsData}></Timeline>
