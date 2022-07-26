@@ -1,13 +1,13 @@
 import Head from "next/head";
-import Link from "next/link";
 import Layout from "../../components/layout";
 import Section from "../../components/section";
-import Timeline from "../../components/timeline";
-import Date from '../../components/date';
 import { siteTitle } from "../../components/layout";
-import { getSortedEventsData } from "../../lib/events";
+import { getAllEventsData } from "../../lib/datocms";
+import Timeline from "../../components/timeline";
 
-export default function Page({ allEventsData }) {
+export default function Page({ eventData }) {
+    const eventList = eventData.allEvents;
+
     return (
         <Layout>
             <Head>
@@ -15,17 +15,36 @@ export default function Page({ allEventsData }) {
             </Head>
 
             <Section size="Md">
-                <Timeline allEventsData={ allEventsData }></Timeline>
+                <Timeline allEventsData={eventList}></Timeline>
+{/* 
+                {eventList.map((event) => (
+                    <div key={event.slug}>
+                        <h3>{event.title}</h3>
+                        <p>{event.description}</p>
+                        <Image data={event.coverImage.responsiveImage}></Image>
+                        <StructuredText
+                            data={event.content}
+                            renderBlock={({ record }) => {
+                                switch (record.__typename) {
+                                    case "ImageRecord":
+                                        return <Image data={record.image.responsiveImage} />;
+                                    default:
+                                        return null;
+                                }
+                            }}></StructuredText>
+                    </div>
+                ))} */}
             </Section>
         </Layout>
     );
 }
 
+
+
 export async function getStaticProps() {
-    const allEventsData = getSortedEventsData();
+    const eventData = await getAllEventsData();
+
     return {
-        props: {
-            allEventsData,
-        },
+        props: { eventData },
     };
 }

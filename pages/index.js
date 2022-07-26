@@ -4,15 +4,17 @@ import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import Hero from "../components/hero";
 import Section from "../components/section";
-import { getSortedEventsData } from "../lib/events";
 import Timeline from "../components/timeline";
 import { Container, Row, Col } from "react-bootstrap";
 import MAG from "../public/images/logo/MAG.png";
 import balaiseni from "../public/images/logo/balaiseninegara.jpg";
 import LADA from "../public/images/logo/LADA.svg";
 import Button from "react-bootstrap/Button";
+import { getAllEventsData } from "../lib/datocms";
 
 export default function Home({ allEventsData }) {
+    const eventList = allEventsData.allEvents;
+
     return (
         <>
             <Hero />
@@ -50,7 +52,7 @@ export default function Home({ allEventsData }) {
                     <Button href="/register">Register</Button>
                 </Section>
                 <Section size="Md">
-                    <Timeline allEventsData={allEventsData}></Timeline>
+                    <Timeline allEventsData={eventList}></Timeline>
                 </Section>
                 <Section size="Sm" className={utilStyles.organizers} middle>
                     <Container className={utilStyles.sponsors}>
@@ -84,7 +86,7 @@ export default function Home({ allEventsData }) {
 }
 
 export async function getStaticProps() {
-    const allEventsData = getSortedEventsData();
+    const allEventsData = await getAllEventsData();
     return {
         props: {
             allEventsData,
