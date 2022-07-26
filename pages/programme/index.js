@@ -2,7 +2,7 @@ import Head from "next/head";
 import Layout from "../../components/layout";
 import Section from "../../components/section";
 import { siteTitle } from "../../components/layout";
-import { getEventData } from "../../lib/datocms";
+import { getAllEventsData } from "../../lib/datocms";
 import Timeline from "../../components/timeline";
 
 export default function Page({ eventData }) {
@@ -42,7 +42,7 @@ export default function Page({ eventData }) {
 
 
 export async function getStaticProps() {
-    const eventData = await getEventData();
+    const eventData = await getAllEventsData();
 
     return {
         props: { eventData },

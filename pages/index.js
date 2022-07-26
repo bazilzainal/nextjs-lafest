@@ -10,7 +10,7 @@ import MAG from "../public/images/logo/MAG.png";
 import balaiseni from "../public/images/logo/balaiseninegara.jpg";
 import LADA from "../public/images/logo/LADA.svg";
 import Button from "react-bootstrap/Button";
-import { getEventData } from "../lib/datocms";
+import { getAllEventsData } from "../lib/datocms";
 
 export default function Home({ allEventsData }) {
     const eventList = allEventsData.allEvents;
@@ -86,7 +86,7 @@ export default function Home({ allEventsData }) {
 }
 
 export async function getStaticProps() {
-    const allEventsData = await getEventData();
+    const allEventsData = await getAllEventsData();
     return {
         props: {
             allEventsData,
