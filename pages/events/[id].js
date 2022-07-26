@@ -19,6 +19,10 @@
 //     );
 // }
 
+export default function Event({ eventData }) {
+    return <></>;
+}
+
 // export async function getStaticPaths() {
 //     const paths = getAllEventIds();
 
