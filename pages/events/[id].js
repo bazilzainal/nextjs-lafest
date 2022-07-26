@@ -1,8 +1,8 @@
-// import Layout from "../../components/layout";
+import Layout from "../../components/layout";
 // import { getAllEventIds, getEventData } from "../../lib/events";
-// import Section from "../../components/section";
-// import Image from "next/image";
-// import styles from "./utils.module.css";
+import Section from "../../components/section";
+import Image from "react-datocms";
+import styles from "./events.module.css";
 // import Date from "../../components/date";
 
 // export default function Event({ eventData }) {
