@@ -6,8 +6,10 @@ $subheader-color: #757474;
 .all img {
     width: 100%;
     border-radius: 5px;
+    height: 120px;
+    object-fit: cover;
     @media screen and (max-width: 599px) {
-        height: 250px;
+        height: 150px;
         object-fit: cover;
     }
 }
@@ -37,11 +39,13 @@ $subheader-color: #757474;
 .all h3 {
     font-family: $header-font;
     font-weight: 500;
-    margin: 0.5rem 0;
+    // margin: 0.5rem 0;
 }
 
 .all h4 {
     color: $subheader-color;
+    margin: 0.5rem 0;
+
 }
 
 .gridWrapper {
