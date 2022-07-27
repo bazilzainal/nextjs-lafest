@@ -6,11 +6,14 @@ import Hero from "../components/hero";
 import Section from "../components/section";
 import Timeline from "../components/timeline";
 import { Container, Row, Col } from "react-bootstrap";
+import { getAllEventsData } from "../lib/datocms";
+import Button from "react-bootstrap/Button";
+
+// Media imports
 import MAG from "../public/images/logo/MAG.png";
 import balaiseni from "../public/images/logo/balaiseninegara.jpg";
 import LADA from "../public/images/logo/LADA.svg";
-import Button from "react-bootstrap/Button";
-import { getAllEventsData } from "../lib/datocms";
+import motac from "../public/images/logo/motac.png";
 
 export default function Home({ allEventsData }) {
     const eventList = allEventsData.allEvents;
@@ -70,13 +73,15 @@ export default function Home({ allEventsData }) {
                             <p>Supported by</p>
                         </Row>
                         <Row className={utilStyles.row}>
-                            <Col sm={6} className={utilStyles.sponsorPhotos}>
+                            <Col sm={4} className={utilStyles.sponsorPhotos}>
                                 <Image src={balaiseni}></Image>
                             </Col>
-                            <Col sm={6} className={utilStyles.sponsorPhotos}>
+                            <Col sm={4} className={utilStyles.sponsorPhotos}>
                                 <Image src={LADA}></Image>
                             </Col>
-                            {/* <Col sm={3} className={utilStyles.sponsorPhotos}><Image src={LADA}></Image></Col> */}
+                            <Col sm={4} className={utilStyles.sponsorPhotos}>
+                                <Image src={motac}></Image>
+                            </Col>
                         </Row>
                     </Container>
                 </Section>
