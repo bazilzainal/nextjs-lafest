@@ -9,7 +9,7 @@ export default function Footer() {
     return (
         <div className={styles.footer}>
             <Container>
-                <p>Copyright © {year} {siteTitle}</p>
+                <p>Copyright © 2022 – {year} {siteTitle}</p>
             </Container>
         </div>
     );
