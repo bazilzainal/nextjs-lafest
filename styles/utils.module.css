@@ -60,13 +60,40 @@
 }
 
 .sponsors img {
-    height: 5rem !important;
+    height: 4rem !important;
     width: auto !important;
 }
 
 .sponsorPhotos {
     position: relative;
     text-align: center;
+}
+
+.lada {
+    position: relative;
+    text-align: center;
+}
+
+.lada img {
+    height: 7rem !important;
+}
+
+.balaiseni {
+    position: relative;
+    text-align: center;
+}
+
+.balaiseni img {
+    height: 10rem !important;
+}
+
+.motac {
+    position: relative;
+    text-align: center;
+}
+
+.motac img {
+    height: 10rem !important;
 }
 
 .row {

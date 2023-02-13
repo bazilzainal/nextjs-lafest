@@ -73,14 +73,14 @@ export default function Home({ allEventsData }) {
                             <p>Supported by</p>
                         </Row>
                         <Row className={utilStyles.row}>
-                            <Col sm={4} className={utilStyles.sponsorPhotos}>
-                                <Image src={balaiseni}></Image>
+                            <Col sm={4} className={utilStyles.motac}>
+                                <Image src={motac}></Image>
                             </Col>
-                            <Col sm={4} className={utilStyles.sponsorPhotos}>
+                            <Col sm={4} className={utilStyles.lada}>
                                 <Image src={LADA}></Image>
                             </Col>
-                            <Col sm={4} className={utilStyles.sponsorPhotos}>
-                                <Image src={motac}></Image>
+                            <Col sm={4} className={utilStyles.balaiseni}>
+                                <Image src={balaiseni}></Image>
                             </Col>
                         </Row>
                     </Container>
