@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import heroPic from "../public/images/poster.png";
 import styles from "./hero.module.css";
 
