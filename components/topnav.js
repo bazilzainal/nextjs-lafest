@@ -2,7 +2,7 @@ import Link from "next/link";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import logo from "../public/images/logo.png";
 import styles from "./topnav.module.css";
 import { useState } from "react";
@@ -21,7 +21,15 @@ export default function TopNav() {
             <Container className="mx-auto">
                 <Link href="/" passHref legacyBehavior>
                     <Navbar.Brand className={styles.navbrand}>
-                        <Image src={logo} width={70} height={70} onClick={handleClick}></Image>
+                        <Image
+                            src={logo}
+                            width={70}
+                            height={70}
+                            onClick={handleClick}
+                            style={{
+                                maxWidth: "100%",
+                                height: "auto"
+                            }}></Image>
                     </Navbar.Brand>
                 </Link>
                 {/* <Link href="/">
